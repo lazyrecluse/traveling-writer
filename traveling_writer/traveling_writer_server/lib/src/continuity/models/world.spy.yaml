@@ -1,0 +1,8 @@
+class: World
+table: world
+fields:
+  name: String
+  genre: String?
+  description: String?
+  ownerId: String?
+  createdAt: DateTime

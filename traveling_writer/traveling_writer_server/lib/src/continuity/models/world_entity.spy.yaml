@@ -1,0 +1,9 @@
+class: WorldEntity
+table: world_entity
+fields:
+  worldId: int?
+  name: String
+  category: String
+  description: String
+  traits: List<String>?
+  isActive: bool

@@ -1,0 +1,11 @@
+class: WorldRule
+table: world_rule
+fields:
+  worldId: int?
+  entityId: int?
+  subject: String
+  relation: String
+  constraint: String
+  explanation: String?
+  severity: String
+  isActive: bool

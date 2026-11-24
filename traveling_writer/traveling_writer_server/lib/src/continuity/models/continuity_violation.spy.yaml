@@ -1,0 +1,8 @@
+class: ContinuityViolation
+fields:
+  paragraphIndex: int
+  textSnippet: String
+  entityName: String
+  brokenRule: String
+  explanation: String
+  severity: String

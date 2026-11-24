@@ -1,0 +1,11 @@
+{
+  "name": "Traveling Writer",
+  "short_name": "TravelingWriter",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FBF8F2",
+  "theme_color": "#8B5A2B",
+  "description": "AI-Powered Continuity & Lore Guardian for Authors",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false
+}

@@ -1,0 +1,12 @@
+class: PlotNode
+table: plot_node
+fields:
+  worldId: int?
+  title: String
+  summary: String
+  content: String?
+  positionX: double
+  positionY: double
+  connectedNodeIds: List<int>?
+  entityIds: List<int>?
+  status: String

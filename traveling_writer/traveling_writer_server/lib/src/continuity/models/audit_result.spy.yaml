@@ -1,0 +1,9 @@
+class: AuditResult
+fields:
+  storyText: String
+  totalParagraphs: int
+  violations: List<ContinuityViolation>
+  isConsistent: bool
+  summary: String
+  auditedAt: DateTime
+  cached: bool?

@@ -1,0 +1,24 @@
+name: traveling_writer_flutter
+description: A new Flutter project for Traveling Writer.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  traveling_writer_client:
+    path: ../traveling_writer_client
+  serverpod_flutter: 4.0.4
+  shared_preferences: ^2.5.6
+  uuid: ^4.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true

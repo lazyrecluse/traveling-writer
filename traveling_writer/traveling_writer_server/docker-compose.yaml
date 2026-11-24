@@ -1,0 +1,44 @@
+services:
+  # Development services
+  postgres:
+    image: ghcr.io/serverpod/postgres:16
+    ports:
+      - "8090:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: traveling_writer
+      POSTGRES_PASSWORD: "t0KFzFxK2ScCD7mTCcuBNUzO1wBp9wOF"
+    volumes:
+      - traveling_writer_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:6.2.6
+    ports:
+      - "8091:6379"
+    command: redis-server --requirepass "htr_2KeJb-NL7kLBLOgw_5KNRZJpGBhX"
+    environment:
+      - REDIS_REPLICATION_MODE=master
+
+  # Test services
+  postgres_test:
+    image: ghcr.io/serverpod/postgres:16
+    ports:
+      - "9090:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: traveling_writer_test
+      POSTGRES_PASSWORD: "sClqGrPSVV8QnYB6SC9ZJ5SanZOPjhhz"
+    volumes:
+      - traveling_writer_test_data:/var/lib/postgresql/data
+
+  redis_test:
+    image: redis:6.2.6
+    ports:
+      - "9091:6379"
+    command: redis-server --requirepass "0WHholDrePDC9vZKz-cSY3gkgU2H5VAi"
+    environment:
+      - REDIS_REPLICATION_MODE=master
+
+volumes:
+  traveling_writer_data:
+  traveling_writer_test_data:

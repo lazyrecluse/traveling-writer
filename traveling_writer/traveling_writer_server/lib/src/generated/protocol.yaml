@@ -1,0 +1,29 @@
+emailIdp:
+  - login:
+  - startRegistration:
+  - verifyRegistrationCode:
+  - finishRegistration:
+  - startPasswordReset:
+  - verifyPasswordResetCode:
+  - finishPasswordReset:
+  - hasAccount:
+jwtRefresh:
+  - refreshAccessToken:
+continuity:
+  - listWorlds:
+  - createWorld:
+  - deleteWorld:
+  - auditStory:
+  - listEntities:
+  - createEntity:
+  - deleteEntity:
+  - listRules:
+  - createRule:
+  - deleteRule:
+  - listPlotNodes:
+  - savePlotNode:
+  - deletePlotNode:
+  - auditPlotNode:
+  - seedSampleLore:
+greeting:
+  - hello:
